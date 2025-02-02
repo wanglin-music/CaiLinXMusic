@@ -27,6 +27,9 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "1318826936"))
 
+# Token allow for access youtube songs. [ True = use token data, False = use cookies ]
+TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
+
 # Auto Gcast/Broadcast Handler, Write:- [On / Off] During Hosting.
 AUTO_GCAST = os.getenv("AUTO_GCAST", "on")
 
