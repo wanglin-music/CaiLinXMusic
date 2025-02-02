@@ -27,6 +27,12 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "1318826936"))
 
+# Auto Gcast/Broadcast Handler, Write:- [On / Off] During Hosting.
+AUTO_GCAST = os.getenv("AUTO_GCAST", "on")
+
+# Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
+
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
