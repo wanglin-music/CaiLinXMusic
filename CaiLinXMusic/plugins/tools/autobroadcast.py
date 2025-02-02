@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from config import AUTO_GCAST, AUTO_GCAST_MSG, LOG_GROUP_ID
+from config import AUTO_GCAST, AUTO_GCAST_MSG, LOGGER_ID
 from CaiLinXMusic import app
 from CaiLinXMusic.utils.database import get_served_chats
 
@@ -39,7 +39,7 @@ TEXT = """**ᴀᴜᴛᴏ ɢᴄᴀsᴛ ɪs ᴇɴᴀʙʟᴇᴅ sᴏ ᴀᴜᴛᴏ �
 
 async def send_text_once():
     try:
-        await app.send_message(LOG_GROUP_ID, TEXT)
+        await app.send_message(LOGGER_ID, TEXT)
     except Exception as e:
         pass
 
