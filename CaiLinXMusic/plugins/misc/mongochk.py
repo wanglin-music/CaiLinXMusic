@@ -2,7 +2,7 @@ import re
 from pymongo import MongoClient
 from pyrogram import filters
 from pyrogram.types import Message
-from CaiLinXMusic import app as Hotty
+from CaiLinXMusic import app
 import os
 from config import OWNER_ID
 from CaiLinXMusic.misc import SUDOERS
