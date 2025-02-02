@@ -35,7 +35,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/maythushar-music/CaiLinXMusic",
+    "https://github.com/wanglin-music/CaiLinXMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -89,13 +89,13 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/6rp1ra.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/ms6cru.mp4"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://files.catbox.moe/6rp1ra.jpg"
 )
 PLAYLIST_IMG_URL = "https://files.catbox.moe/6rp1ra.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/6rp1ra.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/ms6cru.mp4"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/6rp1ra.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/6rp1ra.jpg"
 STREAM_IMG_URL = "https://te.legra.ph/file/ebc4dc6357be06e08a3ed.jpg"
