@@ -2,7 +2,7 @@ import re
 from pymongo import MongoClient
 from pyrogram import filters
 from pyrogram.types import Message
-from CaiLinXMusic import app
+from CaiLinXMusic import app as Hotty
 import os
 from config import OWNER_ID
 from CaiLinXMusic.misc import SUDOERS
@@ -33,7 +33,7 @@ async def mongo_check_command(client, message: Message):
         
         
         if len(result) > 4096:
-            paste_url = await VIPbin(result)
+            paste_url = await Hottybin(result)
             await ok.delete()
             await message.reply(f"**The database list is too long to send here. You can view it at:** {paste_url}")
         else:
@@ -189,7 +189,7 @@ async def check_db_command(client, message: Message):
             
             # Check if message exceeds Telegram's limit
             if len(result) > 4096:  # Telegram's message length limit is 4096 characters
-                paste_url = await VIPbin(result)
+                paste_url = await Hottybin(result)
                 await message.reply(f"**The database list is too long to send here. You can view it at:** {paste_url}")
                 await ok.delete()
             else:
