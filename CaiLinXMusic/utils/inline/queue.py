@@ -76,7 +76,7 @@ def aq_markup(_, chat_id):
 
 
 
-def queuemarkup(_, videoid, chat_id):
+def queuemarkup(_, vidid, chat_id):
 
     buttons = [
         [
